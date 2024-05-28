@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+  }
+  
+  #header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #header img {
+    height: 40px; /* Adjust height as needed */
+  }
+  
+  #nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #nav-bar ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  #nav-bar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  marquee {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .video-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #email {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  #submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #header {
+      padding: 10px;
+    }
+  
+    #header img {
+      height: 30px;
+    }
+  
+    #nav-bar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #nav-bar ul li {
+      margin: 10px 0;
+    }
+  
+    #form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-overlay {
+      padding: 10px;
+      font-size: 0.8em;
+    }
+  }
+  
